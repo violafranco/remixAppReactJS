@@ -8,21 +8,28 @@ import Pricing from './components/Pricing';
 
 const App = () => {
   return ( 
-    <>
-      <ContenedorHeader>
-        <Routes>
-          <Route path='/' element={<Header />} />
-          <Route path='/product' element={<Product />} />
-          <Route path='/pricing' element={<Pricing />} />
-          <Route path='/forsketch' element={<ForSketch />} />
-        </Routes>
-      </ContenedorHeader>
+    <> 
+      <ContenedorApp>
+        <ContenedorHeader>
+          <Routes>
+            <Route path='/' element={<Header />} />
+            <Route path='/product' element={<Product />} />
+            <Route path='/pricing' element={<Pricing />} />
+            <Route path='/forsketch' element={<ForSketch />} />
+          </Routes>
+        </ContenedorHeader>
+
+      </ContenedorApp>
     </>
    );
 }
 
+const ContenedorApp = styled.div`
+  background-color: ${({theme}) => theme.BgPrimary};
+`
+
 const ContenedorHeader = styled.div`
-  color: var(--primaryColor); 
+  border: none;
 `
  
 export default App;
