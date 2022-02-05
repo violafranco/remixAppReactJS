@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import './themes/themes.css';
 import Header from './components/Header';
 import { Route, Routes } from 'react-router-dom';
 import Product from './components/Product';

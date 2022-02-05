@@ -2,12 +2,12 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import {ReactComponent as logo} from './../images/remix-logo.svg';
-import {ReactComponent as logoDark} from './../images/remix-logo-dark.svg';
-import './../themes/themes.css';
 import Switch from '../elements/switch';
 import { useState } from 'react';
 import Themes from '../themes/mode';
 import { ThemeProvider } from 'styled-components';
+import { GlobalStyle } from '../themes/mode';
+
 
 const Header = () => {
 
@@ -16,6 +16,7 @@ const Header = () => {
     return (
         <>
             <ThemeProvider theme={Themes[theme]} >
+                <GlobalStyle />
                 <Contenedor>
                     <Logo><Icono /></Logo>
                     <Nav>
@@ -43,6 +44,11 @@ const Logo = styled.button`
     margin: 0;
     cursor: pointer;
     background-color: transparent;
+    width: 10rem;
+
+    #logo_remix{
+        fill: ${({theme}) => theme.TextPrimary};
+    }
 `
 
 const Nav = styled.h2`
