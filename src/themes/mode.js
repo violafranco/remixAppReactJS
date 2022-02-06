@@ -1,7 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 
 const Light = {
-    BgPrimary: "#FFFFFF",
+    BgPrimary: "#f5f5f5",
     BgSecondary: "#f7ca18",
     TextPrimary: "#000000",
     TextSecondary: "#595959",
@@ -22,7 +22,6 @@ const Themes = {
 }
 
 export const GlobalStyle = createGlobalStyle`
-
     
     @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500&display=swap');
 

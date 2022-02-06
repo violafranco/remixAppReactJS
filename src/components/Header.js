@@ -3,15 +3,12 @@ import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import {ReactComponent as logo} from './../images/remix-logo.svg';
 import Switch from '../elements/switch';
-import { useState } from 'react';
 import Themes from '../themes/mode';
 import { ThemeProvider } from 'styled-components';
 import { GlobalStyle } from '../themes/mode';
 import { FigmaButton } from '../elements/figmaButton';
 
-const Header = () => {
-
-    const [theme, setTheme] = useState('dark');
+const Header = ({theme, setTheme}) => {
 
     return (
         <>
@@ -37,7 +34,7 @@ const Header = () => {
 
 const Contenedor = styled.div`
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     transition: all 0.5s ease-in;
 `
 

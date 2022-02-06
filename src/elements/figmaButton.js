@@ -8,7 +8,7 @@ export const FigmaButton = styled.button`
     border: none;
     border-radius: 1em;
     margin-top: 0.5em;
-    margin-left: 1.5em;
+    margin-left: 0.6em;
     transition: all 0.3s ease 0s;
     animation: all 1s;
     font-weight: bold;
