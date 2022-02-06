@@ -4,6 +4,7 @@ import { Route, Routes } from 'react-router-dom';
 import Product from './components/Product';
 import ForSketch from './components/ForSketch';
 import Pricing from './components/Pricing';
+import SignIn from './components/SignIn';
 
 const App = () => {
   return ( 
@@ -15,6 +16,7 @@ const App = () => {
             <Route path='/product' element={<Product />} />
             <Route path='/pricing' element={<Pricing />} />
             <Route path='/forsketch' element={<ForSketch />} />
+            <Route path='/signin' element={<SignIn />} />
           </Routes>
         </ContenedorHeader>
 

@@ -7,7 +7,7 @@ import { useState } from 'react';
 import Themes from '../themes/mode';
 import { ThemeProvider } from 'styled-components';
 import { GlobalStyle } from '../themes/mode';
-
+import { FigmaButton } from '../elements/figmaButton';
 
 const Header = () => {
 
@@ -24,8 +24,11 @@ const Header = () => {
                         <NavLink to='/pricing'>Pricing</NavLink>
                         <NavLink to='/forsketch'>For Sketch</NavLink>
                     </Nav>
-
                     <Switch theme={theme} setTheme={setTheme} />
+                    <FigmaButton>Get Figma</FigmaButton>
+                    <Nav>
+                        <NavLink style={{fontSize:'1.1em'}} to='/signin'>Sign in</NavLink>
+                    </Nav>
                 </Contenedor>
             </ThemeProvider>
         </>
@@ -59,7 +62,7 @@ const Nav = styled.h2`
         color: ${({theme}) => theme.TextPrimary};
         padding: 17px;
         text-decoration: none;
-        transition: all 1s;
+        transition: all ease 0.3s;
     }
 
     a:hover {
