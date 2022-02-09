@@ -27,14 +27,14 @@ const Cont1 = ({theme}) => {
     );
 }
 
-const Title = styled.h1`
+export const Title = styled.h1`
     width: 100%;
     font-size: 3.3em;
     max-width: 51%;
     margin-top: 5%;
 `
 
-const Paragraph = styled.p`
+export const Paragraph = styled.p`
     width: 50%;
     margin-bottom: 1em;
 `

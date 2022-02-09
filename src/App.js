@@ -6,6 +6,7 @@ import ForSketch from './components/ForSketch';
 import Pricing from './components/Pricing';
 import SignIn from './components/SignIn';
 import Cont1Component from './components/Cont1';
+import Cont2Component from './components/Cont2';
 import Themes from '../src/themes/mode';
 import { ThemeProvider } from 'styled-components';
 import { useState } from 'react';
@@ -29,12 +30,25 @@ const App = () => {
           <Cont1Component theme={theme} />
         </Cont1>
 
+        <Cont2>
+          <Cont2Component theme={theme}/>
+        </Cont2>
+
+
       </ThemeProvider>
     </> 
    );
 }
 
 const Cont1 = styled.div`
+  display: flex;
+  flex-direction: column;
+  color: ${({theme}) => theme.TextPrimary};
+  font-family: 'Space Grotesk', sans-serif;
+  margin-left: 6%;
+`
+
+const Cont2 = styled.div`
   display: flex;
   flex-direction: column;
   color: ${({theme}) => theme.TextPrimary};
