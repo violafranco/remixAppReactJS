@@ -7,6 +7,7 @@ import Pricing from './components/Pricing';
 import SignIn from './components/SignIn';
 import Cont1Component from './components/Cont1';
 import Cont2Component from './components/Cont2';
+import Cont3Component from './components/Cont3';
 import Themes from '../src/themes/mode';
 import { ThemeProvider } from 'styled-components';
 import { useState } from 'react';
@@ -26,35 +27,23 @@ const App = () => {
           <Route path='/forsketch' element={<ForSketch />} />
           <Route path='/signin' element={<SignIn />} />
         </Routes>
-        <Cont1 >
-          <Cont1Component theme={theme} />
-        </Cont1>
 
-        <Cont2>
-          <Cont2Component theme={theme}/>
-        </Cont2>
-
+        <Cont1Component theme={theme} />
 
       </ThemeProvider>
     </> 
    );
 }
 
-const Cont1 = styled.div`
-  display: flex;
-  flex-direction: column;
-  color: ${({theme}) => theme.TextPrimary};
-  font-family: 'Space Grotesk', sans-serif;
-  margin-left: 6%;
-`
+  
+        /*<ContainerMiddle>
+          <Cont2Component theme={theme}/>
+        </ContainerMiddle>
 
-const Cont2 = styled.div`
-  display: flex;
-  flex-direction: column;
-  color: ${({theme}) => theme.TextPrimary};
-  font-family: 'Space Grotesk', sans-serif;
-  margin-left: 6%;
-`
+        <ContainerMiddle>
+          <Cont3Component theme={theme}/>
+        </ContainerMiddle>*/
+
 
  
 export default App;

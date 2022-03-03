@@ -15,13 +15,11 @@ const Cont2 = () => {
                 </Paragraph>
                 <Button>Learn More ⇨</Button>
             </ContenedorTxt>
-
-            <ContenedorPhoto>
+            
                 <img 
                     src={square}
                     style={{width: '45%', height: '40%', position: 'relative', bottom: '17.5em', left: '50%'}}
                 />
-            </ContenedorPhoto>
         </Contenedor>
     );
 }
@@ -53,10 +51,6 @@ const Button = styled.a`
         transform: scale(0.7);
     }
     
-`
-
-const ContenedorPhoto = styled.div`
-
 `
  
 export default Cont2;

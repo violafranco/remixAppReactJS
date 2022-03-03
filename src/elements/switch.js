@@ -74,12 +74,4 @@ const ButtonSwitch = styled.button`
     outline: none;
 `
 
-
-
-
-
-
-
-
- 
 export default Switch;

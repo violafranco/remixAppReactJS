@@ -31,4 +31,8 @@ export const FigmaButton = styled.button`
         position: relative;
         top: 0.37em;
     }
+    
+    @media (max-width: 800px) {
+        display: none;
+    }
 `

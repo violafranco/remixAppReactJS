@@ -15,17 +15,22 @@ const Header = ({theme, setTheme}) => {
             <ThemeProvider theme={Themes[theme]} >
                 <GlobalStyle />
                 <Contenedor>
-                    <Logo><Icono /></Logo>
-                    <Nav>
-                        <NavLink to='/product'>Product</NavLink>
-                        <NavLink to='/pricing'>Pricing</NavLink>
-                        <NavLink to='/forsketch'>For Sketch</NavLink>
-                    </Nav>
-                    <Switch theme={theme} setTheme={setTheme} />
-                    <FigmaButton>Get Figma</FigmaButton>
-                    <Nav>
-                        <NavLink style={{fontSize:'1.1em'}} to='/signin'>Sign in</NavLink>
-                    </Nav>
+                    <BoxOne>
+                        <Logo><Icono /></Logo>
+                        <Nav>
+                            <NavLink to='/product'>Product</NavLink>
+                            <NavLink to='/pricing'>Pricing</NavLink>
+                            <NavLink to='/forsketch'>For Sketch</NavLink>
+                        </Nav>
+                    </BoxOne>
+
+                    <BoxTwo>
+                        <Switch theme={theme} setTheme={setTheme} />
+                        <FigmaButton>Get Figma</FigmaButton>
+                        <Nav>
+                            <NavLink style={{fontSize:'1.1em'}} to='/signin'>Sign in</NavLink>
+                        </Nav>
+                    </BoxTwo>
                 </Contenedor>
             </ThemeProvider>
         </>
@@ -36,6 +41,31 @@ const Contenedor = styled.div`
     display: flex;
     justify-content: space-evenly;
     transition: all 0.5s ease-in;
+
+    @media (max-width: 800px) {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    @media (max-width: 480px) {
+        flex-direction: row;
+    }
+`
+
+const BoxOne = styled.div`
+    display: flex;
+
+    @media (max-width: 800px) {
+        margin: auto;
+    }
+`
+
+const BoxTwo = styled.div`
+    display: flex;
+
+    @media (max-width: 800px) {
+        margin: auto;
+    }
 `
 
 const Logo = styled.button`
@@ -48,6 +78,10 @@ const Logo = styled.button`
 
     #logo_remix{
         fill: ${({theme}) => theme.TextPrimary};
+    }
+
+    @media (max-width: 480px) {
+        width: 11rem;
     }
 `
 
@@ -65,6 +99,14 @@ const Nav = styled.h2`
     a:hover {
         color: ${({theme}) => theme.BgSecondary};
         text-decoration: none;
+    }
+
+    @media (max-width: 480px) {
+        display: none;
+    }
+
+    @media (max-width: 800px) {
+        font-size: 0.8em;
     }
 `
 
