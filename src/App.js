@@ -29,6 +29,7 @@ const App = () => {
         </Routes>
 
         <Cont1Component theme={theme} />
+        <Cont2Component theme={theme}/>
 
       </ThemeProvider>
     </> 

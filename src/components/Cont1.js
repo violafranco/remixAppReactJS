@@ -41,8 +41,6 @@ const Container = styled.div`
         flex-direction: column;
     }
 
-    @media (max-width: 480px) {
-    }
 `
 
 const ConteinerPart1 = styled.div`
@@ -61,7 +59,7 @@ const ConteinerPart2 = styled.div`
     padding: 0;
 `
 
-export const Title = styled.h1`
+const Title = styled.h1`
     width: 100%;
     font-size: 3.3em;
     margin-top: 5%;
@@ -75,7 +73,7 @@ export const Title = styled.h1`
     }
 `
 
-export const Paragraph = styled.p`
+const Paragraph = styled.p`
     width: 85%;
 
     @media (max-width: 800px) {

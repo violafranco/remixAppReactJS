@@ -1,40 +1,85 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Title, Paragraph } from './Cont1';
 import square from './../images/collaboration.png';
 
 const Cont2 = () => {
     return ( 
         <Contenedor>
-            <ContenedorTxt>
-                <Title style={{fontSize:'2.3em'}}>
+            <BoxOne>
+                <Title>
                     Collaboration has never been easier.
                 </Title>
                 <Paragraph>
                 With Remix, you will be able to actively collaborate with developers in real-time. No more back-and-forth emails and Slack messages to get that design perfect.
                 </Paragraph>
                 <Button>Learn More ⇨</Button>
-            </ContenedorTxt>
-            
+            </BoxOne>
+
+            <BoxTwo>        
                 <img 
                     src={square}
-                    style={{width: '45%', height: '40%', position: 'relative', bottom: '17.5em', left: '50%'}}
+                    style={{width: '95%'}}
                 />
+            </BoxTwo>
         </Contenedor>
     );
 }
 
 const Contenedor = styled.div`
-    position: relative;
-    bottom: 35em;
+    color: ${({theme}) => theme.TextPrimary};
+    display: flex;
+
+    @media (max-width: 800px) {
+        flex-direction: column;
+    }
 `
 
-const ContenedorTxt = styled.div`
+const Title = styled.h1`
+    width: 100%;
+    font-size: 3.3em;
+    margin-top: 5%;
 
+    @media (max-width: 800px) {
+        font-size: 1.7em;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 1.3em;
+    }
+`
+
+const Paragraph = styled.p`
+    width: 85%;
+    margin-bottom: 1em;
+
+    @media (max-width: 800px) {
+        margin: auto;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 0.8em;
+    }
+`
+
+const BoxOne = styled.div`
+    margin-left: 7em;
+    
+    @media (max-width: 800px) {
+        text-align: center;
+        font-size: 0.8;
+        margin-left: 0;
+    }
+`
+
+const BoxTwo = styled.div`
+    width: 70%;
+
+    @media (max-width: 800px) {
+        margin: auto;
+    }
 `
 
 const Button = styled.a`
-
     width: 13%;
     cursor: pointer;
     margin-left: 8px;
@@ -49,8 +94,11 @@ const Button = styled.a`
         background-size: 100% 100%;
         background-position-x: left;
         transform: scale(0.7);
+    }    
+
+    @media (max-width: 480px) {
+        font-size: 0.9em;
     }
-    
 `
  
 export default Cont2;
