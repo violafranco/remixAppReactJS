@@ -62,7 +62,7 @@ const Paragraph = styled.p`
 `
 
 const BoxOne = styled.div`
-    margin-left: 7em;
+    margin-left: 2em;
     
     @media (max-width: 800px) {
         text-align: center;

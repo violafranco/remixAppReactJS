@@ -39,6 +39,10 @@ export const GlobalStyle = createGlobalStyle`
         background-color: ${({theme}) => theme.BgPrimary};  
     }
 
+    html{
+        margin: 0;
+    }
+
 
 `
 

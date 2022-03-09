@@ -30,21 +30,11 @@ const App = () => {
 
         <Cont1Component theme={theme} />
         <Cont2Component theme={theme}/>
+        <Cont3Component theme={theme}/>
 
       </ThemeProvider>
     </> 
    );
 }
 
-  
-        /*<ContainerMiddle>
-          <Cont2Component theme={theme}/>
-        </ContainerMiddle>
-
-        <ContainerMiddle>
-          <Cont3Component theme={theme}/>
-        </ContainerMiddle>*/
-
-
- 
 export default App;
