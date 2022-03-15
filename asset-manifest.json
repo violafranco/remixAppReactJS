@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/remixAppReactJS/static/css/main.e92a0342.css",
-    "main.js": "/remixAppReactJS/static/js/main.7bef2848.js",
+    "main.js": "/remixAppReactJS/static/js/main.cf043e36.js",
     "static/media/collaboration.png": "/remixAppReactJS/static/media/collaboration.5c3b78efa21bf97c8e40.png",
     "static/media/hero-image--dark.svg": "/remixAppReactJS/static/media/hero-image--dark.fbae6e9a085ff174ab811b863ad27b5d.svg",
     "static/media/hero-image--light.svg": "/remixAppReactJS/static/media/hero-image--light.6207b973cd961d2ae2e3fc5fc6821bd8.svg",
     "static/media/people-ilustration.png": "/remixAppReactJS/static/media/people-ilustration.35a2e0161d40b58962f4.png",
-    "static/media/remix-logo.svg": "/remixAppReactJS/static/media/remix-logo.f6b2a6ab2d49e832c703bbcef496969f.svg",
+    "static/media/remix-logo.svg": "/remixAppReactJS/static/media/remix-logo.8f35ae6501b8c2ae3bab8940b5c5226d.svg",
     "static/media/figma-logo.svg": "/remixAppReactJS/static/media/figma-logo.035d9c82fc64c0079172c18ec02ec638.svg",
     "index.html": "/remixAppReactJS/index.html",
     "static/media/yellow-checkmark.svg": "/remixAppReactJS/static/media/yellow-checkmark.0f5d771717b22690d63613aeebfc0169.svg",
     "main.e92a0342.css.map": "/remixAppReactJS/static/css/main.e92a0342.css.map",
-    "main.7bef2848.js.map": "/remixAppReactJS/static/js/main.7bef2848.js.map"
+    "main.cf043e36.js.map": "/remixAppReactJS/static/js/main.cf043e36.js.map"
   },
   "entrypoints": [
     "static/css/main.e92a0342.css",
-    "static/js/main.7bef2848.js"
+    "static/js/main.cf043e36.js"
   ]
 }
