@@ -100,7 +100,7 @@ const Paragraph = styled.p`
 
 `
 
-const Li = styled.li`
+export const Li = styled.li`
     text-align: justify;
     list-style-type: none;
 

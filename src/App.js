@@ -4,6 +4,7 @@ import Cont1Component from './components/Cont1';
 import Cont2Component from './components/Cont2';
 import Cont3Component from './components/Cont3';
 import Cont4Component from './components/Cont4';
+import Footer from './components/Footer.js'
 import Themes from '../src/themes/mode';
 import { ThemeProvider } from 'styled-components';
 import { useState } from 'react';
@@ -23,6 +24,8 @@ const App = () => {
         <Cont2Component theme={theme}/>
         <Cont3Component theme={theme}/>
         <Cont4Component theme={theme}/>
+
+        <Footer />
 
       </ThemeProvider>
     </> 
